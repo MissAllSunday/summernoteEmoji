@@ -15,7 +15,7 @@ $ ->
           emojiButton = ui.buttonGroup [
             ui.dropdown
               className:'dropdown-style'
-              contents: $.summernote.options.sEmoji.list
+              contents: @createList
               callback: ($dropdown) ->
                 # find and insert the emoji
 
@@ -28,6 +28,13 @@ $ ->
           ]
 
           emojiButton.render()
+
+        @createList = () ->
+          list = ""
+          item for item in $.summernote.options.sEmoji.list
+            list += "<span>#{item}</span>"
+
+          list
 
         @destroy = () ->
           return
