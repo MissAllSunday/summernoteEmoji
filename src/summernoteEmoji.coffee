@@ -8,7 +8,7 @@ $ ->
     $.extend $.summernote.plugins,
       'sEmoji' : (context) =>
         ui = $.summernote.ui
-        options = context.options,
+        options = context.options
         lang = options.langInfo
 
         context.memo 'button.sEmoji', () ->
@@ -31,7 +31,7 @@ $ ->
 
         @createList = () ->
           list = ""
-          item for item in $.summernote.options.sEmoji.list
+          for item in $.summernote.options.sEmoji.list
             list += "<span>#{item}</span>"
 
           list
