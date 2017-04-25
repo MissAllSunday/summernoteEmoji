@@ -27,4 +27,9 @@ $ ->
                   toggle: 'dropdown'
           ]
 
-        emojiButton.render()
+          emojiButton.render()
+
+        @destroy = () ->
+          return
+        @initialize = () ->
+          return
