@@ -18,6 +18,13 @@ $ ->
               contents: $.summernote.options.sEmoji.list
               callback: ($dropdown) ->
                 # find and insert the emoji
+
+            ui.button
+              className: 'dropdown-toggle'
+              contents: '<span class="fa fa-smile-o"></span>'
+              tooltip: ""
+              data:
+                  toggle: 'dropdown'
           ]
-          emojiButton.render()
-          return emojiButton
+
+        emojiButton.render()
