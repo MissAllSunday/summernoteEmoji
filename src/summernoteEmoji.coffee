@@ -14,7 +14,7 @@ $.extend $.summernote.plugins,
       emojiButton = ui.buttonGroup [
         ui.button
           className:'dropdown-toggle'
-          contents: sEmojiOptions.icon + ui.icon(options.icons.caret, 'span')
+          contents: sEmojiOptions.icon + ui.icon options.icons.caret, 'span'
           tooltip: sEmojiOptions.tooltip,
             data:
               toggle: 'dropdown'
