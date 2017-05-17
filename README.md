@@ -13,11 +13,10 @@ include lib/summernoteEmoji.js and add sEmoji to summernote toolbar:
 ### Options
 
 ```js
-  $.extend($.summernote.options, {
-    sEmoji: {
-      icon: '<span class="note-current-emoji">😀</span> ',
-      tooltip: 'Insert Emoji',
-      list: ['😀', '😃', '😂', '😊', '😉', '😋', '😎', '🙁', '😡', '😐', '😲', '😱', '😴', '🙄 ', '😈']
-    }
-  });
+$.extend($.summernote.options, {
+  sEmoji: {
+	tooltip: 'Insert Emoji',
+	list: ['😀', '😃', '😂', '😊', '😉', '😋', '😎', '🙁', '😡', '😐', '😲', '😱', '😴', '🙄 ', '😈']
+  }
+});
 ```
