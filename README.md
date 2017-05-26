@@ -8,15 +8,27 @@ It inserts raw emojis, no images or icons.
 
 include lib/summernoteEmoji.js and add sEmoji to summernote toolbar:
 
-['insert', ['sEmoji']],
+$('.summernote').summernote({
+    toolbar:[
+        ['insert', ['sEmoji']]
+    ]
+});
 
 ### Options
 
-```js
+```javascript
 $.extend($.summernote.options, {
   sEmoji: {
-	tooltip: 'Insert Emoji',
-	list: ['😀', '😃', '😂', '😊', '😉', '😋', '😎', '🙁', '😡', '😐', '😲', '😱', '😴', '🙄 ', '😈']
+    icon: '😀',
+    tooltip: 'Insert Emoji',
+    list: ['😀', '😃', '😂', '😊', '😉', '😋', '😎', '🙁', '😡', '😐', '😲', '😱', '😴', '🙄 ', '😈']
   }
 });
 ```
+- icon the default icon for the button
+- tooltip text for the tooltip
+- list A js array of emojis. The plugin will accept any string
+
+### License
+
+Released under the [MIT](https://opensource.org/licenses/MIT) license
